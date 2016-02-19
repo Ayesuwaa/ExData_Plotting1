@@ -20,6 +20,10 @@ Clean_data <- cbind(Settingtime, Clean_data)
 ## Checking the margins if answers are 5.1 4.1 4.1 2.1 use next line to change 1's 
 par("mar")
 
+png(filename = "Plot4.png")
+dev.off()
+
+
 ## changings margsing to the 1's
 par(mar=c(1,1,1,1))
 

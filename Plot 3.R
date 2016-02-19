@@ -24,7 +24,7 @@ labels <- c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
 plot(Clean_data$Settingtime, Clean_data$Sub_metering_1, type="l", col=columncol[1], xlab="", ylab="Energy sub metering")
 lines(Clean_data$Settingtime, Clean_data$Sub_metering_2, col=columncol[2])
 lines(Clean_data$Settingtime, Clean_data$Sub_metering_3, col=columncol[3])
-legend("topright", legend=labels, col=columncol, lty="solid")
+legend("topright", legend=labels, col=columncol, lty="solid", cex = .7)
 
 # checking margins 
 par("mar")
@@ -33,4 +33,5 @@ par("mar")
 par(oma=c(3,3,3,3))
 par(mar=c(2, 4, 1, 1))
 
-
+png(filename = "Plot3.png")
+dev.off()

@@ -20,3 +20,6 @@ Clean_data <- cbind(Settingtime, Clean_data)
 ## Plot 2
 plot(Clean_data$Settingtime, Clean_data$Global_active_power, type = "l", xlab = "", 
      ylab = "Global Active Power (kilowatts)")
+
+png(filename = "Plot2.png")
+dev.off()
